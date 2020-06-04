@@ -10,7 +10,7 @@ import org.elasticsearch.index.IndexSettings;
 public class VietnameseStopTokenFilterFactory extends AbstractTokenFilterFactory  {
 
     public VietnameseStopTokenFilterFactory(IndexSettings indexSettings, Environment environment, String name, Settings settings) {
-        super(indexSettings, name, settings);
+        super(indexSettings, settings, name);
     }
 
     @Override public TokenStream create(TokenStream tokenStream) {
